@@ -2,6 +2,11 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  return products.filter((x) => {
+    if (x.quantity !== 0) {
+      return x;
+    }
+  });
 }
 
 // ตัวอย่างการใช้งาน
